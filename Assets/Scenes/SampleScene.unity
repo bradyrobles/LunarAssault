@@ -460,13 +460,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 1.96, z: -7.64}
+  m_LocalRotation: {x: 0.07075709, y: -0, z: -0, w: 0.9974936}
+  m_LocalPosition: {x: 0, y: 1, z: -7.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1174152638}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.115, y: 0, z: 0}
 --- !u!1 &1174152637
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,10 +681,10 @@ MonoBehaviour:
   velocityTuner: 10
   xRange: 5
   yRange: 3.5
-  positionPitchFactor: 1.5
+  positionPitchFactor: -2
+  controlPitchFactor: -10
   positionYawFactor: 5
-  controlPitchFactor: 10
-  controlRollFactor: -40
+  controlRollFactor: -25
   pitchSpeed: 0.1
 --- !u!1 &2053685972
 GameObject:

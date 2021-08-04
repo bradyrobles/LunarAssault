@@ -12,9 +12,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float velocityTuner = 10f;
     [SerializeField] float xRange = 5f;
     [SerializeField] float yRange = 3.5f;
-    [SerializeField] float positionPitchFactor = 2f;
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float positionYawFactor = 2f;
-    [SerializeField] float controlPitchFactor = 10f;
+
     [SerializeField] float controlRollFactor = -25f;
     [SerializeField] float pitchSpeed = .1f;
 
