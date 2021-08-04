@@ -354,6 +354,9 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Fire
       m_Flags: 0
+  lasers:
+  - {fileID: 1246178062024871168}
+  - {fileID: 8290526104654262349}
   velocityTuner: 10
   xRange: 5
   yRange: 3.5
@@ -454,6 +457,9 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Fire
       m_Flags: 0
+  lasers:
+  - {fileID: 1246178062024871168}
+  - {fileID: 8290526104654262349}
   velocityTuner: 10
   xRange: 5
   yRange: 3.5
@@ -602,6 +608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}
+--- !u!1 &1246178062024871168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4365085864684201586, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}
+  m_PrefabInstance: {fileID: 3303590640519228274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &20305258562409495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3283288682925883237, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}
@@ -664,6 +675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}
+--- !u!1 &8290526104654262349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4365085864684201586, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}
+  m_PrefabInstance: {fileID: 5737088835814266431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7065776519973103962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3283288682925883237, guid: 2a7b0dc6a0daf7540bff26a402f381fd, type: 3}

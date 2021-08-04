@@ -142,6 +142,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467672733753869812}
     m_Modifications:
+    - target: {fileID: 1213817151, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213817151, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 366314165816052854}
+    - target: {fileID: 1213817151, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 7445546407425831227}
     - target: {fileID: 1664269169174470, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -195,5 +207,15 @@ PrefabInstance:
 --- !u!4 &1464202584917335858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+  m_PrefabInstance: {fileID: 1467672733793403254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &366314165816052854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1246178062024871168, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+  m_PrefabInstance: {fileID: 1467672733793403254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7445546407425831227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8290526104654262349, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
   m_PrefabInstance: {fileID: 1467672733793403254}
   m_PrefabAsset: {fileID: 0}

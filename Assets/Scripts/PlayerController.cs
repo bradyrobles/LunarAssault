@@ -54,11 +54,19 @@ public class PlayerController : MonoBehaviour
     {
         if (fire.ReadValue<float>() > .5)
         {
-            Debug.Log("i am shooting");
+            SetLaser(true);
         }
         else
         {
-            Debug.Log("i am not shooting");
+            SetLaser(false);
+        }
+    }
+
+    private void SetLaser(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.gameObject.SetActive(isActive);
         }
     }
 
