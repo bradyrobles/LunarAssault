@@ -11,7 +11,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputAction fire;
     [SerializeField] float velocityTuner = 10f;
     [SerializeField] float xRange = 5f;
-    [SerializeField] float yRange = 5f;
+    [SerializeField] float yRange = 3.5f;
+    [SerializeField] float positionPitchFactor = 2f;
+    [SerializeField] float controlPitchFactor = 10f;
+
+    float xThrow, yThrow;
 
 
     // Start is called before the first frame update
@@ -35,8 +39,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xThrow = movement.ReadValue<Vector2>().x;
-        float yThrow = movement.ReadValue<Vector2>().y;
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    private void ProcessRotation()
+    {
+        float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
+        float yaw = 0f;
+        float roll = 0f;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    private void ProcessTranslation()
+    {
+        xThrow = movement.ReadValue<Vector2>().x;
+        yThrow = movement.ReadValue<Vector2>().y;
 
 
         float rawXPos = transform.localPosition.x +
@@ -53,6 +71,7 @@ public class PlayerController : MonoBehaviour
             transform.localPosition.z
         );
     }
+
     private float CalculateOffset(float temp)
     {
         float offset = temp * Time.deltaTime * velocityTuner;
