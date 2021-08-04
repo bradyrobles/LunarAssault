@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     // Parameter Configurations
     [SerializeField] InputAction movement;
     [SerializeField] InputAction fire;
+    [SerializeField] GameObject[] lasers;
     [SerializeField] float velocityTuner = 10f;
     [SerializeField] float xRange = 5f;
     [SerializeField] float yRange = 3.5f;
@@ -45,9 +46,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ProcessFire();
+        ProcessFire();
         ProcessTranslation();
         ProcessRotation();
+    }
+    private void ProcessFire()
+    {
+        if (fire.ReadValue<float>() > .5)
+        {
+            Debug.Log("i am shooting");
+        }
+        else
+        {
+            Debug.Log("i am not shooting");
+        }
     }
 
     private void ProcessRotation()
